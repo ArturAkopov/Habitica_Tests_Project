@@ -5,7 +5,6 @@ import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.SerializationFeature;
 import config.AuthConfig;
-import io.qameta.allure.Step;
 import org.aeonbits.owner.ConfigFactory;
 import authorization.model.AuthRequestBodyModel;
 import authorization.model.AuthResponseBodyModel;
