@@ -1,6 +1,5 @@
 package tests.api;
 
-import authorization.Authorization;
 import authorization.model.AuthResponseBodyModel;
 import model.GetUserResponseBodyModel;
 import org.assertj.core.api.Assertions;
