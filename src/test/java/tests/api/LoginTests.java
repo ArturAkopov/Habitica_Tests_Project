@@ -1,6 +1,5 @@
 package tests.api;
 
-import authorization.Authorization;
 import authorization.model.AuthResponseBodyModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
