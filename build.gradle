@@ -21,11 +21,11 @@ allure
             report {
                 version.set(allureVersion)
             }
-            adapter { // отвечает за появление папочки build/allure-results
-                aspectjWeaver.set(true) //обработка аннотации @Step
+            adapter {
+                aspectjWeaver.set(true)
                 frameworks {
-                    junit5 { //название фреймворка
-                        adapterVersion.set(allureVersion) //версия интеграции фреймворка и Allure
+                    junit5 {
+                        adapterVersion.set(allureVersion)
                     }
                 }
             }
@@ -54,7 +54,7 @@ dependencies {
             "io.qameta.allure:allure-selenide:$allureVersion",
             "org.aeonbits.owner:owner:$ownerVersion",
             "org.assertj:assertj-core:$assertjVersion",
-            "com.github.javafaker:$javafakerVersion",
+            "com.github.javafaker:javafaker:$javafakerVersion",
             "io.appium:java-client:$appiumVersion",
             "commons-io:commons-io:$commons_ioVersion"
     )
