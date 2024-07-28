@@ -12,7 +12,7 @@ def allureVersion = "2.27.0",
     ownerVersion = "1.0.4",
     assertjVersion = "3.25.3",
     javafakerVersion = "1.0.2",
-    appiumVersion = "8.5.0",
+    appiumVersion = "9.2.3",
     commons_ioVersion = "2.11.0"
 
 
