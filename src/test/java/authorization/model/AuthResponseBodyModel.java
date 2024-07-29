@@ -16,5 +16,21 @@ public class AuthResponseBodyModel {
     private ArrayList<Error> errors;
 
 
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @Data
+    public static class Error {
+        private String message;
+        private String param;
+        private String value;
+    }
+
+    @JsonIgnoreProperties(ignoreUnknown = true)
+    @Data
+    public static class UserData {
+        private String id;
+        private String apiToken;
+        private Boolean newUser;
+        private String username;
+    }
 }
 
