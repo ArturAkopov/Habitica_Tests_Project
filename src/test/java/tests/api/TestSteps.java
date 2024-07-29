@@ -6,10 +6,10 @@ import authorization.model.AuthResponseBodyModel;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import config.AuthConfig;
 import io.qameta.allure.Step;
-import model.DeleteTaskUserResponseBodyModel;
-import model.GetUserResponseBodyModel;
-import model.PostCreateTaskUserRequestModel;
-import model.PostCreateTaskUserResponseModel;
+import tests.api.model.DeleteTaskUserResponseBodyModel;
+import tests.api.model.GetUserResponseBodyModel;
+import tests.api.model.PostCreateTaskUserRequestModel;
+import tests.api.model.PostCreateTaskUserResponseModel;
 import org.aeonbits.owner.ConfigFactory;
 import org.assertj.core.api.Assertions;
 

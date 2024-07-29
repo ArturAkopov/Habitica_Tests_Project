@@ -1,9 +1,9 @@
 package tests.api;
 
 import authorization.model.AuthResponseBodyModel;
-import model.DeleteTaskUserResponseBodyModel;
-import model.GetUserResponseBodyModel;
-import model.PostCreateTaskUserResponseModel;
+import tests.api.model.DeleteTaskUserResponseBodyModel;
+import tests.api.model.GetUserResponseBodyModel;
+import tests.api.model.PostCreateTaskUserResponseModel;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
