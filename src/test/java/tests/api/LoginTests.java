@@ -15,7 +15,7 @@ public class LoginTests extends TestBase {
     @DisplayName("Проверка корректной авторизации")
     void authorizationSuccessTest() {
         AuthResponseBodyModel response = steps.getAuthorization();
-        steps.checkStatusForAuth(response);
+        steps.checkStatus(response.getSuccess());
         steps.checkUserIdForAuth(response);
         steps.checkApiTokenForAuth(response);
         steps.checkUserNameForAuth(response);
