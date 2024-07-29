@@ -21,6 +21,11 @@ public class HabiticaSpec {
             .log(LogDetail.ALL)
             .build();
 
+    public static ResponseSpecification responseSpec201 = new ResponseSpecBuilder()
+            .expectStatusCode(201)
+            .log(LogDetail.ALL)
+            .build();
+
     public static ResponseSpecification responseSpec400 = new ResponseSpecBuilder()
             .expectStatusCode(400)
             .log(LogDetail.ALL)
