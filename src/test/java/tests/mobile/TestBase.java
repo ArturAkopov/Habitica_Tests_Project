@@ -6,6 +6,8 @@ import io.qameta.allure.selenide.AllureSelenide;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import tests.mobile.drivers.BrowserStackMobileDriver;
+import tests.mobile.drivers.EmulateMobileDriver;
 import tests.mobile.drivers.RealMobileDriver;
 
 
@@ -18,14 +20,14 @@ public class TestBase {
     @BeforeAll
     static void beforeAll() {
         Configuration.browserSize = null;
-//        if (System.getProperty("deviceHost", "browserstack").equals("real")) {
+        if (System.getProperty("deviceHost", "browserstack").equals("real")) {
             Configuration.browser = RealMobileDriver.class.getName();
-//            ;}
-//        } else if (System.getProperty("deviceHost", "browserstack").equals("emulation")) {
-//            Configuration.browser = EmulateMobileDriver.class.getName();
-//        } else if (System.getProperty("deviceHost", "browserstack").equals("browserstack")) {
-//            Configuration.browser = BrowserStackDriver.class.getName();
-//        }
+        } else if (System.getProperty("deviceHost", "browserstack").equals("emulation")) {
+            Configuration.browser = EmulateMobileDriver.class.getName();
+        }
+        else if (System.getProperty("deviceHost", "browserstack").equals("browserstack")) {
+            Configuration.browser = BrowserStackMobileDriver.class.getName();
+        }
     }
 
     @BeforeEach
