@@ -13,7 +13,7 @@ import tests.mobile.drivers.RealMobileDriver;
 
 import static com.codeborne.selenide.Selenide.*;
 
-public class TestBase {
+public class MobileTestBase {
 
 
     @BeforeAll
