@@ -1,6 +1,8 @@
 package tests.api;
 
 import authorization.model.AuthResponseBodyModel;
+import io.qameta.allure.Feature;
+import io.qameta.allure.Owner;
 import tests.api.model.DeleteTaskUserResponseBodyModel;
 import tests.api.model.GetUserResponseBodyModel;
 import tests.api.model.PostCreateTaskUserResponseModel;
@@ -14,8 +16,10 @@ import java.io.IOException;
 
 
 @Tag("api")
+@Owner("Акопов Артур")
+@Feature("Actions with tasks")
 @DisplayName("Проверки взаимодействия с задачами")
-public class TaskTests extends TestBase {
+public class TasksTests extends TestBase {
 
     TestSteps steps = new TestSteps();
     TestData testData = new TestData();
