@@ -11,6 +11,7 @@ import tests.web.pages.WelcomePage;
 @Tag("web")
 @Owner("Акопов Артур")
 @Feature("WelcomeScreenNavigation")
+@DisplayName("Проверка кнопок навигации страницы приветствия")
 public class WelcomePageNavigationTests extends WebTestBase {
 
     WelcomePage welcomePage = new WelcomePage();
