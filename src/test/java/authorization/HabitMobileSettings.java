@@ -1,14 +1,16 @@
-package authorization.model;
+package authorization;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.fasterxml.jackson.annotation.JsonRootName;
+import lombok.Data;
 
-
+@Data
 @JsonIgnoreProperties(ignoreUnknown = true)
 @JsonRootName(value = "auth")
 public class HabitMobileSettings {
 
-    String apiId, apiToken;
+    String apiId;
+    String apiToken;
 
     public HabitMobileSettings(String apiId, String apiToken) {
         this.apiId = apiId;
