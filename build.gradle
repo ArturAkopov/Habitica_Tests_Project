@@ -6,13 +6,13 @@ plugins {
 
 def allureVersion = "2.27.0",
     restAssuredVersion = "5.4.0",
-    selenideVersion = "7.2.3",
+    selenideVersion = "6.13.0",
     junitVersion = "5.10.2",
     slf4jVersion = "2.0.7",
     ownerVersion = "1.0.4",
     assertjVersion = "3.25.3",
     javafakerVersion = "1.0.2",
-    appiumVersion = "9.2.3",
+    appiumVersion = "8.4.0",
     commons_ioVersion = "2.11.0"
 
 
