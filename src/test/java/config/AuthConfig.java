@@ -11,4 +11,6 @@ public interface AuthConfig extends Config {
     String password();
     String userId();
     String apiToken();
+    String browserstackUser();
+    String browserstackPassword();
 }
