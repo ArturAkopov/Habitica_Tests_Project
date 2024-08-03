@@ -77,8 +77,15 @@ task api(type: Test) {
         includeTags("api")
     }
 }
+
 task mobile(type: Test) {
     useJUnitPlatform {
         includeTags("mobile")
+    }
+}
+
+task web(type: Test) {
+    useJUnitPlatform {
+        includeTags("web")
     }
 }
