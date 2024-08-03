@@ -14,7 +14,7 @@ import tests.mobile.screens.WelcomeScreen;
 @Owner("Акопов Артур")
 @Feature("StartScreenNavigation")
 @DisplayName("Проверки кнопок навигации начальных экранов")
-public class StartScreenNavigationTests extends TestBase {
+public class StartScreenNavigationTests extends MobileTestBase {
 
     WelcomeScreen welcomeScreen = new WelcomeScreen();
     MainNavigationScreen mainNavigationScreen = new MainNavigationScreen();
