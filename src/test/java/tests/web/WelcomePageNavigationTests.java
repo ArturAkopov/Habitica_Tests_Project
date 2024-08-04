@@ -17,7 +17,7 @@ public class WelcomePageNavigationTests extends WebTestBase {
     WelcomePage welcomePage = new WelcomePage();
 
     @Test
-    @DisplayName("\"Проверка действия кнопки перехода к авторизации - \"Вход\"")
+    @DisplayName("Проверка действия кнопки перехода к авторизации - \"Вход\"")
     void checkEnterButtonTest() {
         welcomePage.openWelcomePage()
                 .clickEnterButton()
@@ -25,7 +25,7 @@ public class WelcomePageNavigationTests extends WebTestBase {
     }
 
     @Test
-    @DisplayName("\"Проверка действия кнопки перехода к регистрации - \"Регистрация\"")
+    @DisplayName("Проверка действия кнопки перехода к регистрации - \"Регистрация\"")
     void checkJoinButtonTest() {
         welcomePage.openWelcomePage()
                 .clickJoinButton()
