@@ -19,9 +19,9 @@ public class WebTestBase {
     @BeforeAll
     static void beforeAll() {
 
-        APIConfig authConfig = ConfigFactory.create(APIConfig.class, System.getProperties());
-        RestAssured.baseURI = authConfig.baseURI();
-        RestAssured.basePath = authConfig.basePath();
+        APIConfig apiConfig = ConfigFactory.create(APIConfig.class, System.getProperties());
+        RestAssured.baseURI = apiConfig.baseURI();
+        RestAssured.basePath = apiConfig.basePath();
 
         WebConfig webConfig = ConfigFactory.create(WebConfig.class, System.getProperties());
         SelenideLogger.addListener("allure", new AllureSelenide());
